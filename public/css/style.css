@@ -1,0 +1,101 @@
+:root {
+    --theme-primary: #014B43;
+    --theme-secondary: #099078;
+    --theme-accent: #9C2113;
+    --theme-background: #F9ECE5;
+    --theme-card-bg: #FFD6D1;
+    --theme-text: #014B43;
+}
+
+body {
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.navbar-custom {
+    background-color: var(--theme-primary) !important;
+}
+
+.login-page {
+    background: linear-gradient(135deg, var(--theme-primary), var(--theme-secondary));
+}
+
+.login-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.login-card .card-header {
+    background: var(--theme-primary);
+    border-bottom: none;
+}
+
+.btn-primary {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--theme-accent);
+    border-color: var(--theme-accent);
+}
+
+.sidebar {
+    background-color: #ffffff;
+    min-height: calc(100vh - 56px);
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--theme-primary);
+    color: #ffffff !important;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--theme-card-bg);
+    color: var(--theme-primary);
+}
+
+.stat-card {
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: var(--theme-card-bg);
+}
+
+.border-primary-custom { border-left: 4px solid var(--theme-primary) !important; }
+.border-secondary-custom { border-left: 4px solid var(--theme-secondary) !important; }
+.border-accent-custom { border-left: 4px solid var(--theme-accent) !important; }
+
+.chart-container {
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+}
+
+.alert-low-stock {
+    background-color: var(--theme-card-bg);
+    border-left: 5px solid var(--theme-accent);
+    color: var(--theme-accent);
+}
+
+tr.table-danger-custom {
+    background-color: rgba(156, 33, 19, 0.08) !important;
+}
+
+.filter-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        border-bottom: 1px solid #e2e8f0;
+    }
+}
